@@ -6,7 +6,7 @@
     <li>Table of Contents</li>
     <li>About the Projects</li>
     <li>Technologies Used</li>
-    <li>Features</li>
+    <li><a href="#features">Features</a></li>
     <li>Setup and Installation</li>
     <li>Future Plans</li>
     <li>Contributing</li>
@@ -25,7 +25,7 @@
 </ul>
 
 ## Features
-<ul>
+<ul id="features">
     <li>Responsive Design: The page adapts to different screen sizes (mobile, tablet, desktop) for a seamless experience.</li>
     <li>Modern Styling: Clean and modern interface styled with Tailwind CSS for rapid UI development.</li>
     <li>Project Showcase: A section where I display my key projects with descriptions and links to live demos or GitHub repositories.</li>
