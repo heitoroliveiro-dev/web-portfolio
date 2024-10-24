@@ -56,33 +56,34 @@
         </div>
         
         <!-- cabeçalho -->
-        <div class="cabecalho lg:grid lg:grid-cols-2 md:grid md:grid-cols-1 sm:grid-cols-1 gap-7 py-10 " id="inicio"> <!-- div cabeçalho tem grid com 2 colunas e gap 7 -->
-            <div class="cabecalho-text grid grid-cols-1 mx-[10rem]">
-                <div class="texto py-[5rem] font-serif">
-                    <h1 class="titulo text-[60px]">Heitor Oliveiro</h1>
-                    <p class="tracking-widest">Desenvolvedor Web<br><br> Aluno de Análise e Desenvolvimento de Sistemas pela PUC Minas</p>
+        <div class="cabecalho grid lg:grid lg:grid-cols-2 md:grid md:grid-cols-1 sm:grid-cols-1 gap-7 py-10" id="inicio"> <!-- div cabeçalho tem grid com 2 colunas e gap 7 -->
+            <div class="cabecalho-text grid grid-cols-1 mx-auto lg:mx-[10rem] px-4">
+                <div class="texto py-[2rem] lg:py-[5rem] font-serif text-center lg:text-left">
+                    <h1 class="titulo text-[40px] lg:text-[60px]">Heitor Oliveiro</h1>
+                    <p class="tracking-widest text-sm lg:text-base">Desenvolvedor Web<br><br> Aluno de Análise e Desenvolvimento de Sistemas pela PUC Minas</p>
                 </div>
 
-                <div class="botoes flex h-[35px] justify-evenly">                    
-                    <button class="bg-blue-600 w-[150px] rounded-lg hover:bg-blue-500"><a href="./assets/curriculo.pdf" download="Currículo" target="_blank">Download CV</a></button>
-                    <button class="bg-gray-300 w-[150px] text-black rounded-lg hover:bg-gray-400"><a href="#projetos">Projetos</a></button>
+                <div class="botoes flex flex-col lg:flex-row gap-4 h-[35px] justify-center lg:justify-evenly ">                    
+                    <button class="bg-blue-600 w-full lg:w-[150px] rounded-lg hover:bg-blue-500"><a href="./assets/curriculo.pdf" download="Currículo" target="_blank">Download CV</a></button>
+                    <button class="bg-gray-300 w-full lg:w-[150px] text-black rounded-lg hover:bg-gray-400"><a href="#projetos">Projetos</a></button>
                 </div>
             </div>
 
             <div class="cabecalho-img">
-                <br><br><img class="h-[30rem] w-[23rem] rounded-full" src="./assets/minha-foto.jpg" alt="desenvolvedor front end">
+                <br><br><img class="h-[30rem] w-[23rem] rounded-full sm:mx-auto" src="./assets/minha-foto.jpg" alt="desenvolvedor front end">
             </div>
         </div>
 
         <!-- sobre -->
-        <div class="sobre grid grid-cols-2 bg-white text-black py-[5rem] px-[3rem] font-serif tracking-widest" id="sobre">
-            <div class="">
+        <div class="sobre grid lg:grid-cols-2  grid-cols-1 bg-white text-black py-[5rem] px-[2rem] sm:px-[1rem] font-serif tracking-widest" id="sobre">
+            
+            <div class="flex justify-center lg:justify-end">
                 <img src="./assets/web-illustration.png" alt="">
             </div>
                 
-            <div class="text-[20px] px-[35px]">
-                <h1 class="text-[45px] flex">Sobre mim</h1>
-                <p class="flex justify-center py-[35px]">
+            <div class="text-[18px] lg:text-[20px] px-2 lg:px-[35px]">
+                <h1 class="text-[30px] lg:text-[45px] flex justify-center lg:justify-start pt-5">Sobre mim</h1>
+                <p class="flex justify-center lg:justify-start py-[20px] lg:py-[35px] text-left">
                     Com mais de quatro anos de experiência no setor de vendas, desenvolvi habilidades valiosas de comunicação, negociação e proatividade, 
                     que agora busco aplicar na área de tecnologia. Atualmente estou cursando Análise e Desenvolvimento de Sistemas pela PUC Minas em transição de 
                     carreira para a área de tecnologia com foco em Desenvolvimento Web FullStack.
@@ -95,60 +96,61 @@
 
         <!-- habilidades -->
         <div class="habilidades" id="habilidades">
-            <h1 class="text-[80px] flex justify-center pt-[50px]">Habilidades</h1>
-            <div class="conteiner grid grid-cols-3 p-[55px]">
+            <h1 class="text-[40px] lg:text-[80px] flex justify-center pt-[50px]">Habilidades</h1>
+
+            <div class="conteiner grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-[30px] lg:p-[55px]">
                 <!-- HTML -->
-                <div class="html p-[25px] m-[15px] bg-gray-200 text-black grid grid-cols-1 grid-rows-2 gap-1 rounded-lg hover:scale-[1.01]">
+                <div class="html p-[15px] lg:p-[25px] m-[15px] bg-gray-200 text-black grid grid-cols-1 grid-rows-2 gap-1 rounded-lg hover:scale-[1.01]">
                     <div class="icon flex-col justify-center text-center">
-                        <i class="fa-brands fa-html5 text-[150px] text-orange-800"></i>
-                        <p class="text-[35px] text-black font-serif tracking-widest">HTML</p>
+                        <i class="fa-brands fa-html5 text-[150px] lg:text-[150px] text-orange-800 pt-[35px]"></i>
+                        <p class="text-[25px] lg:text-[35px] text-black font-serif tracking-widest">HTML</p>
                     </div>
-                    <div class="name flex justify-center p-[15px]">
-                        <p class="text-black font-serif tracking-widest text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio facilis a error voluptatibus qui, sed quasi sapiente reprehenderit eligendi voluptatum consequatur dicta necessitatibus, magni modi, ab recusandae sunt amet ipsum!</p>
+                    <div class="name flex justify-center p-[1px] lg:p-[15px] px-[10px] pb-[1rem]">
+                        <p class="text-black font-serif tracking-widest text-sm lg:text-base text-center ">HTML é a linguagem que usamos para criar as páginas da internet. É como um esqueleto que define a estrutura de um site, indicando onde fica o título, os parágrafos e as imagens. Em resumo, o HTML é a base de tudo que você vê na internet, permitindo que os navegadores entendam e mostrem o conteúdo de forma organizada.</p>
                     </div>
                 </div>
 
                 <!-- CSS -->
-                <div class="css p-[25px] m-[15px] bg-gray-200 text-black grid grid-cols-1 grid-rows-2 gap-1 rounded-lg hover:scale-[1.01]">
+                <div class="css p-[15px] lg:p-[25px] m-[15px] bg-gray-200 text-black grid grid-cols-1 grid-rows-2 gap-1 rounded-lg hover:scale-[1.01]">
                     <div class="icon flex-col justify-center text-center">
-                        <i class="fa-brands fa-css3-alt text-[150px] text-blue-800"></i>
-                        <p class="text-[35px] text-black font-serif tracking-widest">CSS</p>
+                        <i class="fa-brands fa-css3-alt text-[150px] lg:text-[150px] text-blue-800 pt-[35px]"></i>
+                        <p class="text-[25px] lg:text-[35px] text-black font-serif tracking-widest">CSS</p>
                     </div>
-                    <div class="name flex justify-center p-[15px]">
-                        <p class="text-black font-serif tracking-widest text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio facilis a error voluptatibus qui, sed quasi sapiente reprehenderit eligendi voluptatum consequatur dicta necessitatibus, magni modi, ab recusandae sunt amet ipsum!</p>
+                    <div class="name flex justify-center p-[1px] lg:p-[15px] px-[10px] pb-[1rem]">
+                        <p class="text-black font-serif tracking-widest text-sm lg:text-base text-center ">CSS é a linguagem que veste as páginas da web, definindo a aparência e o estilo de cada elemento. Enquanto o HTML cria a estrutura, o CSS cuida dos detalhes visuais, como cores, fontes, tamanhos e layout. Ele adiciona estilo e personalidade à sua página, tornando-a mais atraente e profissional.</p>
                     </div>
                 </div>
 
                 <!-- Tailwind -->
-                <div class="tailwind p-[25px] m-[15px] bg-gray-200 text-black grid grid-cols-1 grid-rows-2 gap-1 rounded-lg hover:scale-[1.01]">
+                <div class="tailwind p-[15px] lg:p-[25px] m-[15px] bg-gray-200 text-black grid grid-cols-1 grid-rows-2 gap-1 rounded-lg hover:scale-[1.01]">
                     <div class="icon flex-col justify-center text-center">
-                        <i class="fa-solid fa-cloud-moon-rain text-[150px] text-blue-400"></i>
-                        <p class="text-[35px] text-black font-serif tracking-widest">TailwindCSS</p>
+                        <i class="fa-solid fa-cloud-moon-rain text-[150px] lg:text-[150px] text-blue-400 pt-[35px]"></i>
+                        <p class="text-[25px] lg:text-[35px] text-black font-serif tracking-widest">Tailwind</p>
                     </div>
-                    <div class="name flex justify-center p-[15px]">
-                        <p class="text-black font-serif tracking-widest text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio facilis a error voluptatibus qui, sed quasi sapiente reprehenderit eligendi voluptatum consequatur dicta necessitatibus, magni modi, ab recusandae sunt amet ipsum!</p>
+                    <div class="name flex justify-center p-[1px] lg:p-[15px] px-[10px] pb-[1rem]">
+                        <p class="text-black font-serif tracking-widest text-sm lg:text-base text-center ">TailwindCSS é um framework utilitário de CSS que permite criar interfaces responsivas de forma rápida e eficiente. Com uma abordagem baseada em classes, oferece flexibilidade para estilizar componentes diretamente no HTML, eliminando a necessidade de escrever CSS personalizado e acelerando o desenvolvimento.</p>
                     </div>
                 </div>
 
-                <!-- JavaScript -->
-                <div class="javascript p-[25px] m-[15px] bg-gray-200 text-black grid grid-cols-1 grid-rows-2 gap-1 rounded-lg hover:scale-[1.01]">
+                <!-- Javascript -->
+                <div class="javascript p-[15px] lg:p-[25px] m-[15px] bg-gray-200 text-black grid grid-cols-1 grid-rows-2 gap-1 rounded-lg hover:scale-[1.01]">
                     <div class="icon flex-col justify-center text-center">
-                        <i class="fa-brands fa-js text-[150px] text-yellow-800"></i>
-                        <p class="text-[35px] text-black font-serif tracking-widest">JavaScript</p>
+                        <i class="fa-brands fa-js text-[150px] lg:text-[150px] text-yellow-800 pt-[35px]"></i>
+                        <p class="text-[25px] lg:text-[35px] text-black font-serif tracking-widest">JavaScript</p>
                     </div>
-                    <div class="name flex justify-center p-[15px]">
-                        <p class="text-black font-serif tracking-widest text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio facilis a error voluptatibus qui, sed quasi sapiente reprehenderit eligendi voluptatum consequatur dicta necessitatibus, magni modi, ab recusandae sunt amet ipsum!</p>
+                    <div class="name flex justify-center p-[1px] lg:p-[15px] px-[10px] pb-[1rem]">
+                        <p class="text-black font-serif tracking-widest text-sm lg:text-base text-center ">JavaScript é uma linguagem de programação essencial para o desenvolvimento web. Usada para criar interatividade em páginas, permite manipular elementos HTML, responder a eventos de usuário e integrar APIs, tornando os sites dinâmicos e funcionais.</p>
                     </div>
                 </div>
 
-                <!-- VueJS -->
-                <div class="vuejs p-[25px] m-[15px] bg-gray-200 text-black grid grid-cols-1 grid-rows-2 gap-1 rounded-lg hover:scale-[1.01]">
+                <!-- VueJs -->
+                <div class="vuejs p-[15px] lg:p-[25px] m-[15px] bg-gray-200 text-black grid grid-cols-1 grid-rows-2 gap-1 rounded-lg hover:scale-[1.01]">
                     <div class="icon flex-col justify-center text-center">
-                        <i class="fa-brands fa-vuejs text-[150px] text-green-800"></i>
-                        <p class="text-[35px] text-black font-serif tracking-widest">Vue.Js</p>
+                        <i class="fa-brands fa-vuejs text-[150px] lg:text-[150px] text-green-800 pt-[35px]"></i>
+                        <p class="text-[25px] lg:text-[35px] text-black font-serif tracking-widest">Vue.Js</p>
                     </div>
-                    <div class="name flex justify-center p-[15px]">
-                        <p class="text-black font-serif tracking-widest text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio facilis a error voluptatibus qui, sed quasi sapiente reprehenderit eligendi voluptatum consequatur dicta necessitatibus, magni modi, ab recusandae sunt amet ipsum!</p>
+                    <div class="name flex justify-center p-[1px] lg:p-[15px] px-[10px] pb-[1rem]">
+                        <p class="text-black font-serif tracking-widest text-sm lg:text-base text-center ">Vue.js é um framework JavaScript progressivo para a construção de interfaces de usuário. Focado em facilitar o desenvolvimento de aplicativos web dinâmicos, oferece componentes reutilizáveis e integrações eficientes, permitindo criar interfaces modernas de forma ágil.</p>
                     </div>
                 </div>
             </div>
