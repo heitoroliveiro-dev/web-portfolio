@@ -8,20 +8,22 @@
     <!-- CDN TailwindCSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <link rel="stylesheet" href="global.css">
+    
     <!-- CDN Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="flex bg-gray-300 h-auto">
     <div class="container mx-auto bg-gray-800 text-white lg:grid-cols-6">
         <div class="menu-nav">
-            <nav class="bg-white  fixed w-full z-20 top-0 start-0 border-b border-gray-200"> <!--dark:border-gray-600 dark:bg-gray-900-->
+            <nav class="bg-white fixed w-full z-20 top-0 start-0 border-b border-gray-200">
                 <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                     <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
                         <i class="fa-solid fa-cube text-gray-900"></i>
                         <span class="self-center text-2xl font-semibold whitespace-nowrap text-gray-900">Heitor Oliveiro</span>
                     </a>
                     <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-                        <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+                        <button id="menu-toggle" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
                             <span class="sr-only">Abrir menu principal</span>
                             <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
@@ -30,25 +32,11 @@
                     </div>
                     <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
                         <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                            <li>
-                                <a href="#inicio" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Início</a>
-                            </li>
-                            
-                            <li>
-                                <a href="#sobre" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Sobre</a>
-                            </li>
-                            
-                            <li>
-                                <a href="#habilidades" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Habilidades</a>
-                            </li>
-    
-                            <li>
-                                <a href="#projetos" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Projetos</a>
-                            </li>
-    
-                            <li>
-                                <a href="#contato" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contato</a>
-                            </li>
+                            <li><a href="#inicio" class="scroll-link block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Início</a></li>
+                            <li><a href="#sobre" class="scroll-link block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Sobre</a></li>
+                            <li><a href="#habilidades" class="scroll-link block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Habilidades</a></li>
+                            <li><a href="#projetos" class="scroll-link block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Projetos</a></li>
+                            <li><a href="#contato" class="scroll-link block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contato</a></li>
                         </ul>
                     </div>
                 </div>
@@ -70,7 +58,7 @@
             </div>
 
             <div class="cabecalho-img">
-                <br><br><img class="h-[30rem] w-[23rem] rounded-full sm:mx-auto" src="./assets/minha-foto.jpg" alt="desenvolvedor front end">
+                <br><br><img class="h-[30rem] w-[23rem] mx-auto rounded-full sm:mx-auto" src="./assets/minha-foto.jpg" alt="desenvolvedor front end">
             </div>
         </div>
 
@@ -157,11 +145,11 @@
         </div>
 
         <!-- projetos -->
-        <div id="projetos" class="projetos bg-gray-300 grid grid-cols-1 grid-rows-2 text-center p-[150px]" id="projetos">
-            <h1 class="text-[80px] text-black font-serif tracking-widest">Em breve</h1>
+        <div id="projetos" class="projetos bg-gray-300 grid grid-cols-1 py-[100px] px-[20px] md:px-[100px] lg:px-[150px] text-center" id="projetos">
+            <h1 class="text-[50px] pb-[40px] lg:text-[80px] text-black font-serif tracking-widest">Em breve</h1>
             <div class="flex justify-center">
                 <div role="status">
-                    <svg aria-hidden="true" class="w-60 h-60 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg aria-hidden="true" class="w-20 h-20 md:w-40 md:h-40 lg:w-60 lg:h-60 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor"/>
                         <path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="currentFill"/>
                     </svg>
@@ -171,11 +159,11 @@
         </div>
 
         <!-- contato -->
-        <div class="contato p-[50px]" id="contato">
-            <div class="form p-[60px]" >
-                <h1 class="text-[60px] text-gray-300 font-serif tracking-widest p-[25px] text-center">Entre em contato comigo: </h1><br><br>
-                <form action="#" method="POST" class="max-w-sm mx-auto">
-                    <div class="formulario p-[35px]">
+        <div class="contato p-[20px] md:p-[50px]" id="contato">
+            <div class="form p-[20px] md:p-[60px]" >
+                <h1 class="text-[40px] md:text-[60px] text-gray-300 font-serif tracking-widest p-[25px] text-center">Entre em contato comigo: </h1><br><br>
+                <form action="#" method="POST" class="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto">
+                    <div class="formulario p-[20px] md:p-[35px]">
                         <div class="mb-5">
                             <label for="name" class="block mb-2 text-sm font-medium text-gray-300">Nome:</label>
                             <input type="text" name="name" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5" placeholder="Digite seu nome" required>
@@ -209,5 +197,27 @@
             </div>
         </div>
     </div>
+
+    <script>
+        // Obtendo referências aos elementos
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('navbar-sticky');
+      
+        // Função para alternar a visibilidade do menu
+        const toggleMenu = () => {
+          menu.classList.toggle('hidden');
+        };
+      
+        // Adiciona o ouvinte de evento ao botão do menu
+        menuToggle.addEventListener('click', toggleMenu);
+      
+        // Adiciona o ouvinte de evento ao documento
+        document.addEventListener('click', (event) => {
+          // Verifica se o clique foi fora do menu e do botão
+          if (!menu.contains(event.target) && !menuToggle.contains(event.target)) {
+            menu.classList.add('hidden'); // Esconde o menu
+          }
+        });
+      </script>
 </body>
 </html>
