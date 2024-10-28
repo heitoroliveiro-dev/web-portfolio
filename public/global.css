@@ -16,4 +16,19 @@
 
 html{
     scroll-behavior:smooth;
+    
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700; /* Para usar o estilo negrito */
+}
+
+p, a, button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400; /* Estilo normal */
 }
